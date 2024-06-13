@@ -3,7 +3,7 @@ let app = express();
 let cors = require('cors')
 
 let routes = require("./router/route")
-let port = 8080;
+let port = process.env.PORT || 8080;
 
 app.use(cors({origin:["http://localhost:3000","http://localhost:3001"]}))
 app.use(express.urlencoded());
