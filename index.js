@@ -1,11 +1,14 @@
 const express = require('express');
-const app = express();
 const cors = require('cors');
 const routes = require('./router/route');
+const app = express();
 const port = 8080;
 
 const allowedOrigins = [
-  'https://dushyant-thakur-web-app.netlify.app' // Your live front-end domain
+  'http://localhost:3000',
+  'http://localhost:3001',
+  'https://thunderous-strudel-cc8e0e.netlify.app', // Your live front-end domain
+  'https://dushyant-thakur-web-app.netlify.app' // Another live front-end domain
 ];
 
 app.use(cors({
@@ -18,8 +21,9 @@ app.use(cors({
     }
     return callback(null, true);
   },
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  optionsSuccessStatus: 200
 }));
 
 app.use(express.urlencoded({ extended: true }));
