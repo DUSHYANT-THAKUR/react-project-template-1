@@ -36,7 +36,7 @@ module.exports.login = async (req, res) => {
                 }
             )
         } else {
-            return res.status(404).json(
+            return res.status(201).json(
                 {
                     message : "Wrong Credential"
                 }
