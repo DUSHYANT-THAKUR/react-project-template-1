@@ -5,7 +5,7 @@ const routes = require('./router/route');
 const port = 8080;
 
 const allowedOrigins = [
-  'https://thunderous-strudel-cc8e0e.netlify.app' // Your live front-end domain
+  'https://dushyant-thakur-web-app.netlify.app' // Your live front-end domain
 ];
 
 app.use(cors({
