@@ -5,10 +5,7 @@ const app = express();
 const port = 8080;
 
 const allowedOrigins = [
-  'http://localhost:3000',
-  'http://localhost:3001',
-  'https://thunderous-strudel-cc8e0e.netlify.app', // Your live front-end domain
-  'https://dushyant-thakur-web-app.netlify.app' // Another live front-end domain
+  'https://chimerical-heliotrope-83572d.netlify.app/'
 ];
 
 app.use(cors({
