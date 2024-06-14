@@ -1,8 +1,8 @@
 let databaseConnection = require("../database/connection")
 let mongoose = require("mongoose")
 let loginSchema = new mongoose.Schema({
-    id:{
-        type:Number
+    name:{
+        type:String
     },
     email:{
         type : String,
