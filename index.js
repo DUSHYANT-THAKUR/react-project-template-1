@@ -5,7 +5,9 @@ const app = express();
 const port = 8080;
 
 const allowedOrigins = [
-  'elegant-kitsune-85a9bf.netlify.app'
+  'http://localhost:3000',
+  'https://elegant-kitsune-85a9bf.netlify.app',
+  'https://react-project-template-1.onrender.com' // Add your backend domain
 ];
 
 app.use((req, res, next) => {
