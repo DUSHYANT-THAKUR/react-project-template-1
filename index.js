@@ -7,7 +7,7 @@ const port = 8080;
 const allowedOrigins = [
   'http://localhost:3000',
   'https://elegant-kitsune-85a9bf.netlify.app',
-  'https://react-project-template-1.onrender.com' // Add your backend domain
+  'https://api.render.com/deploy/srv-cpldbsf109ks73dqla1g?key=Xfx-YqJ-NBk' // Add your backend domain
 ];
 
 app.use((req, res, next) => {
