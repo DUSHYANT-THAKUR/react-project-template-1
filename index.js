@@ -5,7 +5,7 @@ const app = express();
 const port = 8080;
 
 const allowedOrigins = [
-  'https://chimerical-heliotrope-83572d.netlify.app'
+  'elegant-kitsune-85a9bf.netlify.app'
 ];
 
 app.use((req, res, next) => {
